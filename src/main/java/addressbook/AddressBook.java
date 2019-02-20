@@ -1,7 +1,6 @@
-import javax.persistence.CascadeType;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+package addressbook;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,6 +9,7 @@ public class AddressBook {
 
 
     @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "ab")

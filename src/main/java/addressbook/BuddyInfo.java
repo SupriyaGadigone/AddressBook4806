@@ -1,6 +1,6 @@
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+package addressbook;
+
+import javax.persistence.*;
 
 @Entity
 public class BuddyInfo {
@@ -12,6 +12,7 @@ public class BuddyInfo {
     private AddressBook ab;
 
     @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int id;
 
     public BuddyInfo(){

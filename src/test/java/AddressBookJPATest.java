@@ -1,3 +1,5 @@
+import addressbook.AddressBook;
+import addressbook.BuddyInfo;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -54,16 +56,16 @@ public class AddressBookJPATest  extends TestCase {
         List<BuddyInfo> buddyInfoList = q2.getResultList();
 
         System.out.println("");
-        System.out.println("List of AddressBook\n----------------");
+        System.out.println("List of addressbook.AddressBook\n----------------");
 
-        //Print out information in AddressBook
+        //Print out information in addressbook.AddressBook
         for (AddressBook ab : addressBookList) {
             //ab.printAddressBook();
             System.out.println( " (id=" + ab.getId() + ")");
         }
 
         System.out.println("");
-        System.out.println("List of BuddyInfo\n----------------");
+        System.out.println("List of addressbook.BuddyInfo\n----------------");
         //Print out information mapped by ab - addressbook identifier
         for (BuddyInfo bi : buddyInfoList) {
             System.out.println(bi.getName() + " (id=" + bi.getId() + ")");

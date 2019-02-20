@@ -1,4 +1,6 @@
 
+import addressbook.AddressBook;
+import addressbook.BuddyInfo;
 import junit.framework.TestCase;
 import org.junit.Before;
 import org.junit.Test;

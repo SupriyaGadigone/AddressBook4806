@@ -1,5 +1,6 @@
 
 
+import addressbook.BuddyInfo;
 import junit.framework.TestCase;
 import org.junit.Test;
 
@@ -47,7 +48,7 @@ public class BuddyInfoJPATest  extends TestCase {
         List<BuddyInfo> results = q.getResultList();
 
         System.out.println("");
-        System.out.println("List of BuddyInfo\n----------------");
+        System.out.println("List of addressbook.BuddyInfo\n----------------");
         for(BuddyInfo b: results){
             System.out.println(b.getName() + " id: " + b.getId());
         }
