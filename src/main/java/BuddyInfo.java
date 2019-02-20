@@ -1,7 +1,18 @@
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class BuddyInfo {
 
     private String name;
     private String phoneNumber;
+
+    @ManyToOne
+    private AddressBook ab;
+
+    @Id
+    private int id;
 
     public BuddyInfo(){
 
@@ -31,5 +42,13 @@ public class BuddyInfo {
     @Override
     public String toString() {
         return this.name + ": " + this.phoneNumber;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
