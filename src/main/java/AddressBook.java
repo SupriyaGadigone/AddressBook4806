@@ -60,4 +60,9 @@ public class AddressBook {
     public void setId(int id) {
         this.id = id;
     }
+
+    public static void main(String[] args) {
+        Launcher launcher = new Launcher();
+        launcher.launch();
+    }
 }
