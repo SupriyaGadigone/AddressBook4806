@@ -7,7 +7,6 @@ import java.util.List;
 @Entity
 public class AddressBook {
 
-
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private int id;
