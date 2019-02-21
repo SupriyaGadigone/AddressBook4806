@@ -15,9 +15,9 @@ public class BuddyInfoApplication {
 
     private static final Logger log = LoggerFactory.getLogger(BuddyInfoApplication.class);
 
-    public static void main(String[] args) {
-        SpringApplication.run(BuddyInfoApplication.class);
-    }
+//    public static void main(String[] args) {
+//        SpringApplication.run(BuddyInfoApplication.class);
+//    }
 
     @Bean
     public CommandLineRunner demo(BuddyInfoRepository repository) {
