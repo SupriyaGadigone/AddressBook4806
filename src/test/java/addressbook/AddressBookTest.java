@@ -1,3 +1,4 @@
+package addressbook;
 
 import addressbook.AddressBook;
 import addressbook.BuddyInfo;
