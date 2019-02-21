@@ -1,9 +1,18 @@
+package addressbook;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
 public class AddressBook {
 
 
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
+    private int id;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "ab")
     private List<BuddyInfo> buddyInfoObjects = new ArrayList<BuddyInfo>();
 
     public AddressBook(){
@@ -44,4 +53,11 @@ public class AddressBook {
         this.buddyInfoObjects = buddyInfoObjects;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }
