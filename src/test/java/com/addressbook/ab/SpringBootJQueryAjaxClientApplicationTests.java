@@ -1,4 +1,4 @@
-package com.javasampleapproach.jqueryajax;
+package com.addressbook.ab;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
